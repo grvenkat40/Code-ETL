@@ -91,6 +91,14 @@ for _,row in data.iterrows():
     row['Product_Category_Personal_Care'],
     row['Product_Category_Clothing']
     ))
+select Education, Annual_Salary from ai_retail_data where Annual_Salary="High";
+select count(*) from ai_retail_data where Annual_Salary="High";
+
+select Education, Annual_Salary from ai_retail_data where Annual_Salary="Medium High";
+select count(*) from ai_retail_data where Annual_Salary="Medium High";
+
+select Education, Annual_Salary from ai_retail_data where Annual_Salary="Low";
+select count(*) from ai_retail_data where Annual_Salary="Low";
     
 conn.commit()
 cursor.close()
